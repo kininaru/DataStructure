@@ -1,6 +1,10 @@
 #include <iostream>
+#include "List/LinkedList.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    LinkedList<int> list;
+    auto *node = new LinkedListNode<int>(1);
+    list += node;
+    std::cout << list.size() << std::endl;
     return 0;
 }
